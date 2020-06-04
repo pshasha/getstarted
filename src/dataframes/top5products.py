@@ -54,7 +54,7 @@ result = getRevenue.withColumn("Rank", dense_rank().over(wf))
 
 Final_result = result.where(result.Rank <= 5)
 
-print(type(Final_result))
+
 
 
 
