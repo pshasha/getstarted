@@ -61,4 +61,5 @@ spec = w.partitionBy(getrevenue.Month).orderBy(getrevenue.Revenue.desc())
 
 result = getrevenue.withColumn("Rank", dense_rank().over(spec))
 
+result.show(2) 
 
